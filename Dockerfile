@@ -1,8 +1,9 @@
 FROM ruby
 
-# install SASS & Compass, see http://thesassway.com/beginner/getting-started-with-sass-and-compass
+# install SASS & Compass, see https://www.drupal.org/node/2188263
+RUN gem install compass --version 0.12.7
 # ssh, sftp are for automatically uploading generated css files to remote
-RUN gem install compass net-ssh net-sftp
+RUN gem install net-ssh net-sftp
 
 WORKDIR /usr/src/app
 
