@@ -6,4 +6,5 @@ RUN gem install compass net-ssh net-sftp
 
 WORKDIR /usr/src/app
 
+ENV LC_ALL en_US.UTF-8
 ENV LANG en_US.UTF-8
